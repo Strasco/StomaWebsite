@@ -11,7 +11,7 @@ import {
 	PricingCardFeatures,
 	PricingCardText,
 	PricingCardFeature,
-	PricingCard,
+	PricingCard
 } from './PricingStyles';
 import { pricingData } from '../../data/PricingData';
 
@@ -20,17 +20,11 @@ function Pricing() {
 		<IconContext.Provider value={{ color: '#a9b3c1', size: '1rem' }}>
 			<PricingSection id="pricing">
 				<PricingWrapper>
-					<Heading>Pick Your Best Option</Heading>
+					<Heading>Preturi</Heading>
 
-					<TextWrapper
-						mb="1.4rem"
-						weight="600"
-						size="1.1rem"
-						color="white"
-						align="center"
-					>
+					{/* <TextWrapper mb="1.4rem" weight="600" size="1.1rem" color="white" align="center">
 						Create, maintain and store your data with Delta.
-					</TextWrapper>
+					</TextWrapper> */}
 					<PricingContainer>
 						{pricingData.map((card, index) => (
 							<PricingCard key={index}>
@@ -38,14 +32,14 @@ function Pricing() {
 									<PricingCardPlan>{card.title}</PricingCardPlan>
 									<PricingCardCost>{card.price}</PricingCardCost>
 									<PricingCardText>{card.description}</PricingCardText>
-									<PricingCardFeatures>
+									{/* <PricingCardFeatures>
 										{card.features.map((feature, index) => (
 											<PricingCardFeature key={index}>
 												{feature}
 											</PricingCardFeature>
 										))}
-									</PricingCardFeatures>
-									<Button>Get Started</Button>
+									</PricingCardFeatures> */}
+									{/* <Button>Get Started</Button> */}
 								</PricingCardInfo>
 							</PricingCard>
 						))}

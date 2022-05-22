@@ -25,8 +25,7 @@ export const FooterSubscription = styled.section`
 `;
 
 export const FooterSubHeading = styled.p`
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial,
-		sans-serif;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	margin-bottom: 24px;
 	font-size: 24px;
 `;
@@ -97,9 +96,7 @@ export const FooterLinkItems = styled.div`
 	}
 `;
 
-export const FooterLinkTitle = styled.h2`
-	margin-bottom: 16px;
-`;
+export const FooterLinkTitle = styled.h2`margin-bottom: 16px;`;
 
 export const FooterLink = styled(Link)`
 	color: #fff;
@@ -121,12 +118,15 @@ export const FooterLogo = styled(Link)`
 	display: flex;
 	align-items: center;
 	margin-bottom: 16px;
+	font-size: 24px;
 `;
 
 export const SocialIcon = styled.img`
 	margin-right: 10px;
 	width: 40px;
 `;
+
+export const SocialIconText = styled.img`font-size: 4px;`;
 
 export const FooterRights = styled.div`
 	color: #fff;

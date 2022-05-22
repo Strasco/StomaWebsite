@@ -6,14 +6,14 @@ export const Nav = styled.nav`
 	background: transparent;
 	margin-bottom: -80px;
 	height: 80px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	/* display: flex; */
+	/* justify-content: center; */
+	/* align-items: center; */
 	font-size: 1.2rem;
-	position: absolute;
-	top: 0;
+	/* position: absolute; */
+	/* top: 0; */
 	z-index: 50;
-	width: 100%;
+	/* width: 100%; */
 
 	transition: background-color 0.3s ease-in;
 `;
@@ -36,6 +36,8 @@ export const NavLogo = styled(Link)`
 	align-items: center;
 	z-index: 50;
 `;
+
+export const NavLogoText = styled.span`white-space: nowrap;`;
 
 export const NavIcon = styled.img`
 	margin-right: 1rem;

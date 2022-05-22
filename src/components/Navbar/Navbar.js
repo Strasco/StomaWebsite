@@ -11,12 +11,13 @@ import {
 	NavMenu,
 	NavLinks,
 	NavItem,
+	NavLogoText
 } from './NavbarStyles.js';
 import { useLocation, useHistory } from 'react-router-dom';
 import { data } from '../../data/NavbarData';
 
 const Navbar = () => {
-	const [show, setShow] = useState(false);
+	const [ show, setShow ] = useState(false);
 
 	let history = useHistory();
 	let location = useLocation();
@@ -29,7 +30,7 @@ const Navbar = () => {
 		const element = document.getElementById(id);
 
 		element.scrollIntoView({
-			behavior: 'smooth',
+			behavior: 'smooth'
 		});
 	};
 
@@ -47,18 +48,14 @@ const Navbar = () => {
 			<Nav>
 				<NavbarContainer>
 					<NavLogo to="/">
-						<NavIcon src="./assets/logo.png" alt="logo" />
-						Delta
+						<NavIcon src="./assets/images/logo_tooth.png" alt="logo" />
+						<NavLogoText>ZA ProSmile SRL</NavLogoText>
 					</NavLogo>
-					<MobileIcon onClick={handleClick}>
-						{show ? <FaTimes /> : <CgMenuRight />}
-					</MobileIcon>
+					<MobileIcon onClick={handleClick}>{show ? <FaTimes /> : <CgMenuRight />}</MobileIcon>
 					<NavMenu show={show}>
 						{data.map((el, index) => (
 							<NavItem key={index}>
-								<NavLinks onClick={() => closeMobileMenu(el.to, el.id)}>
-									{el.text}
-								</NavLinks>
+								<NavLinks onClick={() => closeMobileMenu(el.to, el.id)}>{el.text}</NavLinks>
 							</NavItem>
 						))}
 					</NavMenu>

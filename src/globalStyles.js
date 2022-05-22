@@ -10,10 +10,9 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 export const Container = styled.div`
-	width: 100%;
+	width: auto;
 	max-width: 1300px;
-	margin-right: auto;
-	margin-left: auto;
+	margin: auto;
 	padding: 0 50px;
 
 	@media screen and (max-width: 960px) {
@@ -25,8 +24,9 @@ export const MainHeading = styled.h1`
 	margin-bottom: 2rem;
 	color: ${({ inverse }) => (inverse ? '$403ae3' : '#fff')};
 	width: 100%;
-	letter-spacing: 4px;
+	/* letter-spacing: 4px; */
 	text-align: center;
+	/* white-space: nowrap; */
 `;
 
 export const Heading = styled.h2`
@@ -39,6 +39,7 @@ export const Heading = styled.h2`
 	line-height: 1.06;
 	text-align: center;
 	width: ${({ width }) => (width ? width : '100%')};
+	padding: 50px;
 `;
 export const TextWrapper = styled.span`
 	color: ${({ color }) => (color ? color : '')};

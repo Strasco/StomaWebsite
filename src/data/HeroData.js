@@ -2,45 +2,44 @@ export const heroOne = {
 	reverse: true,
 	inverse: true,
 	topLine: {
-		text: 'Founded in 2012',
+		text: 'Fondat in 2019'
 	},
-	headline: "We've been in business for 9 years",
-	description: 'We have designed and implemented the best cloud security solutions',
+	headline: 'Medic Generalist din 2019',
+	description: 'Absolvent al scolii Medicina Generala Timisoara',
 	buttonLabel: 'Find More',
 	imgStart: 'start',
 	img: './assets/svg/Deal.svg',
-	start: 'true',
+	start: 'true'
 };
 
 export const heroTwo = {
 	reverse: false,
 	inverse: false,
 	topLine: {
-		text: 'Designed & Developed',
+		text: 'Grija & Incredere'
 	},
-	headline: 'The best practices',
-	description: 'Our clients have had the best experience working with us',
+	headline: 'Cele mai bune practici',
+	description: 'Aici clientii afla ca un Medic Stomatolog poate lucra finut si cu grija.',
 	buttonLabel: 'View Project',
 
 	linkTo: '/more',
 	imgStart: 'start',
 	img: './assets/svg/Connection.svg',
-	start: 'true',
+	start: 'true'
 };
 
 export const heroThree = {
 	reverse: true,
 	inverse: true,
 	topLine: {
-		text: 'Highly reputed brand',
+		text: 'Highly reputed brand'
 	},
 	headline: 'Why us? ',
-	description:
-		'Our 9 year experience have allowed us to use the most innovative technologies and methodologies',
+	description: 'Our 9 year experience have allowed us to use the most innovative technologies and methodologies',
 	buttonLabel: 'View Project',
 
 	linkTo: '/download',
 	imgStart: '',
 	img: './assets/svg/ChartUp.svg',
-	start: 'true',
+	start: 'true'
 };

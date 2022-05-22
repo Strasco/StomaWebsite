@@ -2,14 +2,10 @@ export const data = [
 	{
 		to: '/',
 		text: 'About',
-		id: 'about',
+		id: 'about'
 	},
 	{
 		to: '/pricing',
-		text: 'Pricing',
-	},
-	{
-		to: '/signup',
-		text: 'Contact',
-	},
+		text: 'Pricing'
+	}
 ];

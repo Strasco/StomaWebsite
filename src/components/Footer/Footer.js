@@ -5,12 +5,13 @@ import {
 	FooterLink,
 	FooterLogo,
 	SocialIcon,
+	SocialIconText,
 	FooterRights,
 	FooterSocialIcon,
 	FooterWrapper,
 	FooterAddress,
 	FooterColumn,
-	FooterGrid,
+	FooterGrid
 } from './FooterStyles';
 import { footerData, footerSocialData } from '../../data/FooterData';
 import { Row, Section } from '../../globalStyles';
@@ -22,18 +23,16 @@ function Footer() {
 				<FooterGrid justify="space-between">
 					<FooterColumn id="footerLogo">
 						<FooterLogo to="/">
-							<SocialIcon src="./assets/logo.png" />
-							Delta
+							<SocialIcon src="./assets/images/logo_tooth.png" />
+							ZA ProSmile
 						</FooterLogo>
-						<FooterAddress>
-							69 Street, Delta Building, US Road, Los Angeles 123
-						</FooterAddress>
+						<FooterAddress>Adresă: Strada Tudor Vladimirescu nr 35, Lupeni 335600</FooterAddress>
 
 						<Row align="center" margin="auto  0 0 0" gap="1rem">
 							{footerSocialData.map((social, index) => (
 								<FooterSocialIcon
 									key={index}
-									href="/"
+									href={social.url}
 									target="_blank"
 									aria-label={social.name}
 								>
@@ -53,7 +52,7 @@ function Footer() {
 						</FooterLinkItems>
 					))}
 				</FooterGrid>
-				<FooterRights>Delta © 2021</FooterRights>
+				<FooterRights>ZA ProSmile SRL © 2022</FooterRights>
 			</FooterWrapper>
 		</Section>
 	);

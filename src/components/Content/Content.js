@@ -9,36 +9,29 @@ import {
 	Subtitle,
 	ImgWrapper,
 	Img,
-	ContentColumn,
+	ContentColumn
 } from './ContentStyles.js';
 
 import { useInView } from 'react-intersection-observer';
 import { useAnimation } from 'framer-motion';
 
-export const Content = ({
-	primary,
-	topLine,
-	headline,
-	description,
-	buttonLabel,
-	img,
-	alt,
-	inverse,
-	reverse,
-}) => {
+export const Content = ({ primary, topLine, headline, description, buttonLabel, img, alt, inverse, reverse }) => {
 	const initial = { opacity: 0, y: 30 };
 	const animation = useAnimation();
 
 	const { ref, inView } = useInView({ threshold: 0.2 });
 
-	useEffect(() => {
-		if (inView) {
-			animation.start({
-				opacity: 1,
-				y: 0,
-			});
-		}
-	}, [inView, animation]);
+	useEffect(
+		() => {
+			if (inView) {
+				animation.start({
+					opacity: 1,
+					y: 0
+				});
+			}
+		},
+		[ inView, animation ]
+	);
 
 	return (
 		<Section inverse={inverse} ref={ref}>
@@ -46,11 +39,7 @@ export const Content = ({
 				<ContentRow reverse={reverse}>
 					<ContentColumn>
 						<TextWrapper>
-							<TopLine
-								initial={initial}
-								transition={{ delay: 0.3, duration: 0.6 }}
-								animate={animation}
-							>
+							<TopLine initial={initial} transition={{ delay: 0.3, duration: 0.6 }} animate={animation}>
 								{topLine.text}
 							</TopLine>
 							<Heading
@@ -69,7 +58,7 @@ export const Content = ({
 							>
 								{description}
 							</Subtitle>
-							<ContentButton
+							{/* <ContentButton
 								initial={initial}
 								transition={{ delay: 1, duration: 0.6 }}
 								animate={animation}
@@ -77,14 +66,10 @@ export const Content = ({
 								primary={primary}
 							>
 								{buttonLabel}
-							</ContentButton>
+							</ContentButton> */}
 						</TextWrapper>
 					</ContentColumn>
-					<ContentColumn
-						initial={initial}
-						transition={{ delay: 0.5, duration: 0.6 }}
-						animate={animation}
-					>
+					<ContentColumn initial={initial} transition={{ delay: 0.5, duration: 0.6 }} animate={animation}>
 						<ImgWrapper>
 							<Img
 								src={img}

@@ -2,10 +2,11 @@ import styled from 'styled-components';
 
 export const PricingSection = styled.div`
 	padding: 160px 0;
-	display: flex;
+	/* display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: center; */
 	background: #101522;
+	/* height: 100%; */
 `;
 
 export const PricingWrapper = styled.div`
@@ -13,6 +14,7 @@ export const PricingWrapper = styled.div`
 	flex-direction: column;
 	align-items: center;
 	margin: 0 auto;
+	height: 50.5vh;
 
 	@media screen and (max-width: 960px) {
 		margin: 0 30px;
@@ -52,7 +54,7 @@ export const PricingCard = styled.div`
 export const PricingCardInfo = styled.div`
 	background: #242424;
 	box-shadow: 0 6px 20px rgba(56, 125, 255, 0.2);
-	width: 280px;
+	/* width: 280px; */
 	text-decoration: none;
 	border-radius: 4px;
 	height: 100%;
@@ -86,9 +88,7 @@ export const PricingCardPlan = styled.h3`
 	font-size: 2rem;
 `;
 
-export const PricingCardCost = styled.h4`
-	font-size: 1.2rem;
-`;
+export const PricingCardCost = styled.h4`font-size: 1.2rem;`;
 
 export const PricingCardText = styled.p`
 	font-size: 1.1rem;
