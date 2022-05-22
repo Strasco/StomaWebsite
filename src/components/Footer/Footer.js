@@ -18,7 +18,7 @@ import { Row, Section } from '../../globalStyles';
 
 function Footer() {
 	return (
-		<Section padding="4rem 0 2rem 0">
+		<Section padding="1rem">
 			<FooterWrapper>
 				<FooterGrid justify="space-between">
 					<FooterColumn id="footerLogo">

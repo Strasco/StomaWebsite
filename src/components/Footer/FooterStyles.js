@@ -9,8 +9,8 @@ export const FooterContainer = styled.div`
 
 export const FooterWrapper = styled.div`
 	max-width: 1280px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: auto;
+	padding: 10px;
 `;
 
 export const FooterSubscription = styled.section`
@@ -22,15 +22,19 @@ export const FooterSubscription = styled.section`
 	margin-bottom: 24px;
 	padding: 24px;
 	color: #fff;
+	padding: 10px;
 `;
 
 export const FooterSubHeading = styled.p`
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	margin-bottom: 24px;
 	font-size: 24px;
+	padding: 10px;
 `;
 
 export const FooterRow = styled(Row)`
+	padding: 10px;
+
 	flex-wrap: wrap;
 	@media screen and (max-width: 820px) {
 		> div {

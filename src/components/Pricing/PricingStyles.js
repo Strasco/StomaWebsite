@@ -1,20 +1,19 @@
 import styled from 'styled-components';
 
 export const PricingSection = styled.div`
-	padding: 160px 0;
-	/* display: flex;
+	/* padding: 160px 0; */
+	display: flex;
 	flex-direction: column;
-	justify-content: center; */
+	justify-content: center;
 	background: #101522;
-	/* height: 100%; */
+	min-height: 100vh;
 `;
 
 export const PricingWrapper = styled.div`
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin: 0 auto;
-	height: 50.5vh;
+	/* display: flex; */
+	/* flex-direction: column; */
+	/* align-items: center; */
+	/* margin: 0 auto; */
 
 	@media screen and (max-width: 960px) {
 		margin: 0 30px;
@@ -28,6 +27,7 @@ export const PricingContainer = styled.div`
 	display: flex;
 	justify-content: center;
 	flex-flow: wrap;
+	height: 100%;
 	> div {
 		margin: 0.7rem;
 	}
